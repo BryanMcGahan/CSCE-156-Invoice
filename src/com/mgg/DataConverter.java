@@ -2,71 +2,66 @@ package com.mgg;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonElement;
+import com.google.gson.stream.JsonWriter;
+
+
 public class DataConverter {
 
 	public static void main(String[] args) {
 
-		List<SaleItem> saleItemList = itemsReader();
-		for (SaleItem item : saleItemList) {
-			System.out.println(item.calcTotalPrice()+ " " + item.getSaleItemType() + " " + item.getSaleItemName());
-		}
-
-	}
-
-	public static List<SaleItem> itemsReader() {
-
-		List<SaleItem> saleItemList = new ArrayList<>();
-		File itemsFile = new File("data/items.csv");
-		try {
-			Scanner fileScanner = new Scanner(itemsFile);
-			String numberOfEntries = fileScanner.nextLine();
-			while (fileScanner.hasNextLine()) {
-				String tokens[] = fileScanner.nextLine().split(",");
-				if (tokens.length > 3) {
-					String itemCode = tokens[0];
-					String itemType = tokens[1];
-					String itemName = tokens[2];
-					double itemBasePrice = Double.parseDouble(tokens[3]);
-					if (itemType.charAt(0) == 'P') {
-						Product newProduct = new Product(itemCode, itemName, itemType, itemBasePrice);
-						saleItemList.add(newProduct);
-					} else if (itemType.charAt(1) == 'V') {
-						Service newService = new Service(itemCode, itemName, itemType, 1, itemBasePrice);
-						saleItemList.add(newService);
-					} else if (itemType.charAt(1) == 'B') {
-						Subscription newSubscription = new Subscription(itemCode, itemName, itemType, itemBasePrice);
-						saleItemList.add(newSubscription);
-					}
-				} else {
-					String itemCode = tokens[0];
-					String itemType = tokens[1];
-					String itemName = tokens[2];
-					double itemBasePrice = 0;
-					if (itemType.charAt(1) == 'G') {
-						Product newProduct = new Product(itemCode, itemName, itemType, itemBasePrice);
-						saleItemList.add(newProduct);
-					} else if (itemType.charAt(1) == 'V') {
-						Service newService = new Service(itemCode, itemName, itemType, 1, itemBasePrice);
-						saleItemList.add(newService);
-					} else if (itemType.charAt(1) == 'B') {
-						Subscription newSubscription = new Subscription(itemCode, itemName, itemType, itemBasePrice);
-						saleItemList.add(newSubscription);
-					}
-
+		List<SaleItem> saleItemList = Reader.itemsReader();
+		List<Person> personList = Reader.personReader();
+		List<Store> storeList = Reader.storeReader();
+		for(Store store: storeList) {
+			String managerCode = store.getManagerCode();
+			for(Person person: personList) {
+				String personCode = person.getPersonCode();
+				if(managerCode.equals(personCode)) {
+					store.setManager(person);
+					//System.out.println(store);
+					break;
 				}
 			}
-		} catch (FileNotFoundException e) {
+		}
+		
+		dataToJSON(saleItemList,personList,storeList);
+	}
+	
+	public static void dataToJSON(List<SaleItem> saleItemList, List<Person> personList, List<Store> storeList) {
+
+		GsonBuilder gsonBuilder = new GsonBuilder();
+		gsonBuilder.setPrettyPrinting();
+		Gson gson = gsonBuilder.create();
+		String items = "items:";
+		
+		
+		try {
+			FileWriter fileWrite = new FileWriter("data/SaleItems.json");
+			fileWrite.write(items);
+			fileWrite.write(gson.toJson(saleItemList));
+			
+			fileWrite.close();
+		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return saleItemList;
-
+		
+		
+		
 	}
 
+	public static void dataToXML(List<SaleItem> saleItemList, List<Person> personList, List<Store> storeList) {
+		
+	}
 }

@@ -8,9 +8,9 @@ public class Store {
 	private String storeCode = null;
 	private String managerCode = null;
 	private Person manager;
-	private HashMap<String, String> storeAddress;
+	private Address storeAddress;
 
-	public Store(String storeCode, String managerCode, HashMap<String, String> storeAddress) {
+	public Store(String storeCode, String managerCode,Address storeAddress) {
 		super();
 		this.storeCode = storeCode;
 		this.managerCode = managerCode;
@@ -33,11 +33,11 @@ public class Store {
 		this.managerCode = managerCode;
 	}
 
-	public HashMap<String, String> getStoreAddress() {
+	public Address getStoreAddress() {
 		return storeAddress;
 	}
 
-	public void setStoreAddress(HashMap<String, String> storeAddress) {
+	public void setStoreAddress(Address storeAddress) {
 		this.storeAddress = storeAddress;
 	}
 

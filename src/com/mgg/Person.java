@@ -7,17 +7,36 @@ public class Person {
 	private String personCode = null;
 	private Character personType = null;
 	private HashMap<String, String> name;
-	private HashMap<String, String> address;
+	private Address address;
 	private List<String> emailAddresses;
 
-	public Person(String personCode, Character personType, HashMap<String, String> name,
-			HashMap<String, String> address, List<String> emailAddresses) {
+	public Person(String personCode, Character personType, HashMap<String, String> name,Address address, List<String> emailAddresses) {
 		super();
 		this.personCode = personCode;
 		this.personType = personType;
 		this.name = name;
 		this.address = address;
 		this.emailAddresses = emailAddresses;
+	}
+	
+	
+
+	public Person(String personCode, Character personType, HashMap<String, String> name, Address address) {
+		super();
+		this.personCode = personCode;
+		this.personType = personType;
+		this.name = name;
+		this.address = address;
+	}
+
+
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 
 	public String getPersonCode() {
@@ -44,13 +63,6 @@ public class Person {
 		this.name = name;
 	}
 
-	public HashMap<String, String> getAddress() {
-		return address;
-	}
-
-	public void setAddress(HashMap<String, String> address) {
-		this.address = address;
-	}
 
 	public List<String> getEmailAddresses() {
 		return emailAddresses;
