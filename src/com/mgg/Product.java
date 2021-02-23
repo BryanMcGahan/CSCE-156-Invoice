@@ -1,92 +1,29 @@
 package com.mgg;
 
-public class Product implements SaleItem {
-	
-	private String saleItemCode = null;
-	private String saleItemType =  null;
-	private String saleItemName = null;
-	private double basePrice = 0;
-	private double totalPrice = 0;
-	
-	
+public class Product extends SaleItem{
 
-	public Product(String saleItemCode, String saleItemType, String saleItemName, double basePrice) {
-		super();
-		this.saleItemCode = saleItemCode;
-		this.saleItemType = saleItemType;
-		this.saleItemName = saleItemName;
-		this.basePrice = basePrice;
+	public Product(String saleItemCode, String saleItemName, String saleItemType, double basePrice) {
+		super(saleItemCode, saleItemName, saleItemType, basePrice);
+		// TODO Auto-generated constructor st
+		
 	}
-
-
-
-	@Override
+	
 	public double calcTotalPrice() {
 		
-		if(this.saleItemType.equals("PN")) {
-			this.totalPrice = this.basePrice;
-		}else if(this.saleItemType.equals("PU")) {
-			double discount = this.basePrice * .8;
-			this.totalPrice = this.basePrice - discount;
-					
+		if(this.getSaleItemType().charAt(1)=='N') {
+			this.totalPrice = this.getBasePrice();
+		}else if(this.getSaleItemType().charAt(1)=='U') {
+			double discount = this.getBasePrice()*.8;
+			this.totalPrice = this.getBasePrice()-discount;
+		}else {
+			this.totalPrice = 0;
 		}
 		
 		return totalPrice;
+		
 	}
 
-
-
-
-	public void setSaleItemCode(String saleItemNumber) {
-		this.saleItemCode = saleItemNumber;
-	}
-
-
-
-	public void setSaleItemType(String productType) {
-		this.saleItemType = productType;
-	}
-
-
-	public void setSaleItemName(String productName) {
-		this.saleItemName = productName;
-	}
-
-
-
-	public double getBasePrice() {
-		return basePrice;
-	}
-
-
-
-	public void setBasePrice(double basePrice) {
-		this.basePrice = basePrice;
-	}
-
-
-
-	@Override
-	public String getSaleItemCode() {
-		return saleItemCode;
-	}
-
-
-
-	@Override
-	public String getSaleItemName() {
-		return saleItemName;
-	}
-
-
-
-	@Override
-	public String getSaleItemType() {
-		return saleItemType;
-	}
-
-
-
-
+	
+	
 
 }
