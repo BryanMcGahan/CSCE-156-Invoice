@@ -38,12 +38,29 @@ public class DataConverter {
 					if (itemType.charAt(0) == 'P') {
 						Product newProduct = new Product(itemCode, itemType, itemName, itemBasePrice);
 						saleItemList.add(newProduct);
+					}else if(itemType.charAt(1) == 'V') {
+						Service newService = new Service(itemCode, itemName, itemType, 1, itemBasePrice);
+						saleItemList.add(newService);
+					}else if(itemType.charAt(1) == 'B') {
+						Subscription newSubscription = new Subscription(itemCode, itemName, itemType, itemBasePrice);
+						saleItemList.add(newSubscription);
 					}
 				} else {
 					String itemCode = tokens[0];
 					String itemType = tokens[1];
 					String itemName = tokens[2];
 					double itemBasePrice = 0;
+					if (itemType.charAt(1) == 'G') {
+						Product newProduct = new Product(itemCode, itemType, itemName, itemBasePrice);
+						saleItemList.add(newProduct);
+					}else if(itemType.charAt(1) == 'V') {
+						Service newService = new Service(itemCode, itemName, itemType, 1, itemBasePrice);
+						saleItemList.add(newService);
+					}else if(itemType.charAt(1) == 'B') {
+						Subscription newSubscription = new Subscription(itemCode, itemName, itemType, itemBasePrice);
+						saleItemList.add(newSubscription);
+					}
+					
 				}
 			}
 		} catch (FileNotFoundException e) {
