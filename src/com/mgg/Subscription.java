@@ -34,8 +34,4 @@ public class Subscription extends SaleItem {
 		this.subEndDate = subEndDate;
 	}
 	
-	public void calcTotalPrice() {
-		this.setTotalPrice(this.getBasePrice());
-	}
-
 }

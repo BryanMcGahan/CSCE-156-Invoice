@@ -13,17 +13,9 @@ public class Service extends SaleItem {
 	}
 
 
-	public double getHoursCharged() {
-		return hoursCharged;
-	}
-
 
 	public void setHoursCharged(double hoursCharged) {
 		this.hoursCharged = hoursCharged;
-	}
-	
-	public void calcTotalPrice() {
-		this.setTotalPrice(this.hoursCharged*this.getBasePrice());
 	}
 
 }

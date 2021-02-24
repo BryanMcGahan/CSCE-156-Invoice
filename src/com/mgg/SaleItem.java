@@ -5,7 +5,6 @@ public class SaleItem {
 	private String saleItemName = null;
 	private String saleItemType = null;
 	private double basePrice = 0;
-	private double totalPrice = 0;
 	
 	
 	public SaleItem(String saleItemCode, String saleItemName, String saleItemType, double basePrice) {
@@ -54,19 +53,7 @@ public class SaleItem {
 
 	public void setBasePrice(double basePrice) {
 		this.basePrice = basePrice;
-	}
-
-
-	public double getTotalPrice() {
-		return totalPrice;
-	}
-
-
-	public void setTotalPrice(double totalPrice) {
-		this.totalPrice = totalPrice;
-	}
-	
-	
+	}	
 	
 	
 	

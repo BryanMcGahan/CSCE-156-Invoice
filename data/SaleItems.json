@@ -3,129 +3,111 @@ items:[
     "saleItemCode": "1d4d89",
     "saleItemName": "PlayStation 5 Digital Edition",
     "saleItemType": "PN",
-    "basePrice": 399.99,
-    "totalPrice": 399.99
+    "basePrice": 399.99
   },
   {
     "saleItemCode": "1ed5b7",
     "saleItemName": "Nintendo Switch Lite",
     "saleItemType": "PN",
-    "basePrice": 199.99,
-    "totalPrice": 199.99
+    "basePrice": 199.99
   },
   {
     "saleItemCode": "6ce4cd",
     "saleItemName": "Splatoon 2 (Digital Copy)",
     "saleItemType": "PN",
-    "basePrice": 59.99,
-    "totalPrice": 59.99
+    "basePrice": 59.99
   },
   {
     "saleItemCode": "c547e7",
     "saleItemName": "Diet Mt Dew (20oz)",
     "saleItemType": "PN",
-    "basePrice": 1.99,
-    "totalPrice": 1.99
+    "basePrice": 1.99
   },
   {
     "saleItemCode": "5f73aa",
     "saleItemName": "Nintendo Digital Gold",
     "saleItemType": "PG",
-    "basePrice": 0.0,
-    "totalPrice": 0.0
+    "basePrice": 0.0
   },
   {
     "saleItemCode": "14e2b7",
     "saleItemName": "Steam",
     "saleItemType": "PG",
-    "basePrice": 0.0,
-    "totalPrice": 0.0
+    "basePrice": 0.0
   },
   {
     "saleItemCode": "8a30ad",
     "saleItemName": "Android Store",
     "saleItemType": "PG",
-    "basePrice": 0.0,
-    "totalPrice": 0.0
+    "basePrice": 0.0
   },
   {
     "saleItemCode": "daad6a",
     "saleItemName": "Robux",
     "saleItemType": "PG",
-    "basePrice": 0.0,
-    "totalPrice": 0.0
+    "basePrice": 0.0
   },
   {
     "saleItemCode": "649f88",
     "saleItemName": "Legend of Zelda (NES)",
     "saleItemType": "PU",
-    "basePrice": 24.5,
-    "totalPrice": 4.899999999999999
+    "basePrice": 24.5
   },
   {
     "saleItemCode": "0ec6e9",
     "saleItemName": "Animal Crossings",
     "saleItemType": "PU",
-    "basePrice": 59.99,
-    "totalPrice": 11.997999999999998
+    "basePrice": 59.99
   },
   {
     "saleItemCode": "9b6e30",
     "saleItemName": "Oculus Rift",
     "saleItemType": "PU",
-    "basePrice": 199.99,
-    "totalPrice": 39.99799999999999
+    "basePrice": 199.99
   },
   {
     "saleItemCode": "40a433",
     "saleItemName": "Vive",
     "saleItemType": "PU",
-    "basePrice": 599.99,
-    "totalPrice": 119.99799999999999
+    "basePrice": 599.99
   },
   {
     "hoursCharged": 1.0,
     "saleItemCode": "8e366e",
     "saleItemName": "Console Repair",
     "saleItemType": "SV",
-    "basePrice": 59.99,
-    "totalPrice": 59.99
+    "basePrice": 59.99
   },
   {
     "hoursCharged": 1.0,
     "saleItemCode": "c4fb35",
     "saleItemName": "VR Party Rental",
     "saleItemType": "SV",
-    "basePrice": 120.0,
-    "totalPrice": 120.0
+    "basePrice": 120.0
   },
   {
     "hoursCharged": 1.0,
     "saleItemCode": "740515",
     "saleItemName": "Game Addiction Counseling",
     "saleItemType": "SV",
-    "basePrice": 1.99,
-    "totalPrice": 1.99
+    "basePrice": 1.99
   },
   {
     "saleItemCode": "426dda",
     "saleItemName": "X-Box Live",
     "saleItemType": "SB",
-    "basePrice": 50.0,
-    "totalPrice": 50.0
+    "basePrice": 50.0
   },
   {
     "saleItemCode": "dedd44",
     "saleItemName": "Nintendo Power magazine",
     "saleItemType": "SB",
-    "basePrice": 120.0,
-    "totalPrice": 120.0
+    "basePrice": 120.0
   },
   {
     "saleItemCode": "3506f6",
     "saleItemName": "Disney Plus",
     "saleItemType": "SB",
-    "basePrice": 89.99,
-    "totalPrice": 89.99
+    "basePrice": 89.99
   }
 ]
