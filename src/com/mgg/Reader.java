@@ -26,13 +26,15 @@ public class Reader {
 					double itemBasePrice = Double.parseDouble(tokens[3]);
 					if (itemType.charAt(0) == 'P') {
 						Product newProduct = new Product(itemCode, itemName, itemType, itemBasePrice);
-						//newProduct.setTotalPrice(newProduct.calcTotalPrice());
+						newProduct.calcTotalPrice();
 						saleItemList.add(newProduct);
 					} else if (itemType.charAt(1) == 'V') {
 						Service newService = new Service(itemCode, itemName, itemType, 1, itemBasePrice);
+						newService.calcTotalPrice();
 						saleItemList.add(newService);
 					} else if (itemType.charAt(1) == 'B') {
 						Subscription newSubscription = new Subscription(itemCode, itemName, itemType, itemBasePrice);
+						newSubscription.calcTotalPrice();
 						saleItemList.add(newSubscription);
 					}
 				} else {

@@ -29,7 +29,7 @@ public class DataConverter {
 				String personCode = person.getPersonCode();
 				if(managerCode.equals(personCode)) {
 					store.setManager(person);
-					//System.out.println(store);
+					System.out.println(store);
 					break;
 				}
 			}
@@ -44,14 +44,23 @@ public class DataConverter {
 		gsonBuilder.setPrettyPrinting();
 		Gson gson = gsonBuilder.create();
 		String items = "items:";
-		
-		
+		String person = "person:";
+		String store = "store:";
 		try {
-			FileWriter fileWrite = new FileWriter("data/SaleItems.json");
-			fileWrite.write(items);
-			fileWrite.write(gson.toJson(saleItemList));
+			FileWriter itemsWrite = new FileWriter("data/SaleItems.json");
+			FileWriter personWrite = new FileWriter("data/Person2.json");
+			FileWriter storeWrite = new FileWriter("data/Store2.json");
+			itemsWrite.write(items);
+			itemsWrite.write(gson.toJson(saleItemList));
+			personWrite.write(person);
+			personWrite.write(gson.toJson(personList));
+			storeWrite.write(store);
+			storeWrite.write(gson.toJson(storeList));
 			
-			fileWrite.close();
+			
+			itemsWrite.close();
+			personWrite.close();
+			storeWrite.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
