@@ -1,5 +1,11 @@
 package com.mgg;
 
+/**
+ * This class models an address used in the Person Class and the Store Class.
+ * 
+ * @author bryanmcgahan
+ *
+ */
 public class Address {
 	private String street = null;
 	private String city = null;
