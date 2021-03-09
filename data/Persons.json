@@ -1,86 +1,34 @@
-{
-"persons": [
-  {
-    "personCode": "cefa4f",
-    "lastName": "Cullington",
-    "firstName": "Zara",
-    "address": {
-      "street": "81 Northport Avenue",
-      "city": "Mobile",
-      "state": "AL",
-      "country": "US",
-      "zipCode": "36628"
-    },
-    "emails": [
-      "zcullington3@engadget.com",
-      "zcullington3@wisc.edu",
-      "zcullington3@google.es",
-      "zcullington3@google.pl"
-    ]
-  },
-  {
-    "personCode": "aef60b",
-    "lastName": "Uttley",
-    "firstName": "Gianni",
-    "address": {
-      "street": "6811 Pleasure Point",
-      "city": "Salinas",
-      "state": "CA",
-      "country": "US",
-      "zipCode": "93907"
-    },
-    "emails": [
-      "guttley6@sogou.com",
-      "guttley6@linkedin.com",
-      "guttley6@latimes.com"
-    ]
-  },
-  {
-    "personCode": "99cdc9",
-    "lastName": "Antoshin",
-    "firstName": "Rice",
-    "address": {
-      "street": "3 5th Junction",
-      "city": "Fort Collins",
-      "state": "CO",
-      "country": "US",
-      "zipCode": "80525"
-    },
-    "emails": [
-      "rantoshina@cam.ac.uk",
-      "rantoshina@amazonaws.com",
-      "rantoshina@economist.com",
-      "rantoshina@sfgate.com"
-    ]
-  },
+person:[
   {
     "personCode": "fdc267",
-    "lastName": "Quarry",
+    "personType": "E",
     "firstName": "Staci",
+    "lastName": "Quarry",
     "address": {
       "street": "601 Lotheville Road",
       "city": "Savannah",
       "state": "GA",
-      "country": "US",
-      "zipCode": "31405"
+      "zipCode": "31405",
+      "country": "US"
     },
-    "emails": [
+    "emailAddresses": [
       "squarry0@reverbnation.com",
       "squarry0@salon.com"
     ]
   },
   {
     "personCode": "0375b6",
-    "lastName": "Michelotti",
+    "personType": "E",
     "firstName": "Nonnah",
+    "lastName": "Michelotti",
     "address": {
       "street": "0 Havey Avenue",
       "city": "Cleveland",
       "state": "OH",
-      "country": "US",
-      "zipCode": "44177"
+      "zipCode": "44177",
+      "country": "US"
     },
-    "emails": [
+    "emailAddresses": [
       "nmichelotti1@sbwire.com",
       "nmichelotti1@vistaprint.com",
       "nmichelotti1@gravatar.com",
@@ -88,99 +36,108 @@
     ]
   },
   {
-    "personCode": "d78da4",
-    "lastName": "Soloway",
-    "firstName": "Keslie",
+    "personCode": "aa887a",
+    "personType": "E",
+    "firstName": "Wit",
+    "lastName": "Leavold",
     "address": {
-      "street": "5595 Saint Paul Place",
-      "city": "Annapolis",
-      "state": "MD",
-      "country": "US",
-      "zipCode": "21405"
+      "street": "65337 Straubel Place",
+      "city": "Muncie",
+      "state": "IN",
+      "zipCode": "47306",
+      "country": "US"
     },
-    "emails": [
-      "ksoloway9@amazon.co.uk",
-      "ksoloway9@sitemeter.com",
-      "ksoloway9@cmu.edu",
-      "ksoloway9@unicef.org"
+    "emailAddresses": [
+      "wleavold2@npr.org",
+      "wleavold2@craigslist.org"
     ]
   },
   {
-    "personCode": "529dbe",
-    "lastName": "Stammers",
-    "firstName": "Bernadette",
+    "personCode": "cefa4f",
+    "personType": "P",
+    "firstName": "Zara",
+    "lastName": "Cullington",
     "address": {
-      "street": "33 Lake View Alley",
-      "city": "Roanoke",
-      "state": "VA",
-      "country": "US",
-      "zipCode": "24040"
+      "street": "81 Northport Avenue",
+      "city": "Mobile",
+      "state": "AL",
+      "zipCode": "36628",
+      "country": "US"
     },
-    "emails": [
-      "bstammers5@flickr.com",
-      "bstammers5@mapy.cz",
-      "bstammers5@cpanel.net"
+    "emailAddresses": [
+      "zcullington3@engadget.com",
+      "zcullington3@wisc.edu",
+      "zcullington3@google.es",
+      "zcullington3@google.pl"
     ]
-  },
-  {
-    "personCode": "f22d0b",
-    "lastName": "Witherbed",
-    "firstName": "Denny",
-    "address": {
-      "street": "40 Aberg Avenue",
-      "city": "Fresno",
-      "state": "CA",
-      "country": "US",
-      "zipCode": "93786"
-    },
-    "emails": [
-      "dwitherbed8@umich.edu",
-      "dwitherbed8@pbs.org",
-      "dwitherbed8@privacy.gov.au"
-    ]
-  },
-  {
-    "personCode": "89a8a1",
-    "lastName": "Pottie",
-    "firstName": "Portia",
-    "address": {
-      "street": "427 Nevada Pass",
-      "city": "Toledo",
-      "state": "OH",
-      "country": "US",
-      "zipCode": "43656"
-    },
-    "emails": []
   },
   {
     "personCode": "48b5dc",
-    "lastName": "Leaming",
+    "personType": "P",
     "firstName": "Frants",
+    "lastName": "Leaming",
     "address": {
       "street": "7 Sunbrook Center",
       "city": "Young America",
       "state": "MN",
-      "country": "US",
-      "zipCode": "55551"
+      "zipCode": "55551",
+      "country": "US"
     },
-    "emails": [
+    "emailAddresses": [
       "fleaming4@elpais.com",
       "fleaming4@unblog.fr",
       "fleaming4@hugedomains.com"
     ]
   },
   {
+    "personCode": "529dbe",
+    "personType": "P",
+    "firstName": "Bernadette",
+    "lastName": "Stammers",
+    "address": {
+      "street": "33 Lake View Alley",
+      "city": "Roanoke",
+      "state": "VA",
+      "zipCode": "24040",
+      "country": "US"
+    },
+    "emailAddresses": [
+      "bstammers5@flickr.com",
+      "bstammers5@mapy.cz",
+      "bstammers5@cpanel.net"
+    ]
+  },
+  {
+    "personCode": "aef60b",
+    "personType": "G",
+    "firstName": "Gianni",
+    "lastName": "Uttley",
+    "address": {
+      "street": "6811 Pleasure Point",
+      "city": "Salinas",
+      "state": "CA",
+      "zipCode": "93907",
+      "country": "US"
+    },
+    "emailAddresses": [
+      "guttley6@sogou.com",
+      "guttley6@linkedin.com",
+      "guttley6@latimes.com"
+    ]
+  },
+  {
     "personCode": "8197d3",
-    "lastName": "Halse",
+    "personType": "G",
     "firstName": "Farand",
+    "lastName": "Halse",
     "address": {
       "street": "37 Hoard Circle",
       "city": "Plano",
       "state": "TX",
-      "country": "US",
-      "zipCode": "75074"
+      "zipCode": "75074",
+      "country": "US"
     },
-    "emails": [
+    "emailAddresses": [
       "fhalse7@europa.eu",
       "fhalse7@microsoft.com",
       "fhalse7@fc2.com",
@@ -188,19 +145,59 @@
     ]
   },
   {
-    "personCode": "aa887a",
-    "lastName": "Leavold",
-    "firstName": "Wit",
+    "personCode": "f22d0b",
+    "personType": "G",
+    "firstName": "Denny",
+    "lastName": "Witherbed",
     "address": {
-      "street": "65337 Straubel Place",
-      "city": "Muncie",
-      "state": "IN",
-      "country": "US",
-      "zipCode": "47306"
+      "street": "40 Aberg Avenue",
+      "city": "Fresno",
+      "state": "CA",
+      "zipCode": "93786",
+      "country": "US"
     },
-    "emails": [
-      "wleavold2@npr.org",
-      "wleavold2@craigslist.org"
+    "emailAddresses": [
+      "dwitherbed8@umich.edu",
+      "dwitherbed8@pbs.org",
+      "dwitherbed8@privacy.gov.au"
+    ]
+  },
+  {
+    "personCode": "d78da4",
+    "personType": "C",
+    "firstName": "Keslie",
+    "lastName": "Soloway",
+    "address": {
+      "street": "5595 Saint Paul Place",
+      "city": "Annapolis",
+      "state": "MD",
+      "zipCode": "21405",
+      "country": "US"
+    },
+    "emailAddresses": [
+      "ksoloway9@amazon.co.uk",
+      "ksoloway9@sitemeter.com",
+      "ksoloway9@cmu.edu",
+      "ksoloway9@unicef.org"
+    ]
+  },
+  {
+    "personCode": "99cdc9",
+    "personType": "C",
+    "firstName": "Rice",
+    "lastName": "Antoshin",
+    "address": {
+      "street": "3 5th Junction",
+      "city": "Fort Collins",
+      "state": "CO",
+      "zipCode": "80525",
+      "country": "US"
+    },
+    "emailAddresses": [
+      "rantoshina@cam.ac.uk",
+      "rantoshina@amazonaws.com",
+      "rantoshina@economist.com",
+      "rantoshina@sfgate.com"
     ]
   }
-]}
+]

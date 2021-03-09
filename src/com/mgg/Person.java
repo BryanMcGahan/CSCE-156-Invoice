@@ -3,21 +3,52 @@ package com.mgg;
 import java.util.HashMap;
 import java.util.List;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
+/**
+ * This class models a person from mgg's person's data
+ * @author bryanmcgahan
+ *
+ */
+@XStreamAlias("Person")
 public class Person {
+	
 	private String personCode = null;
 	private Character personType = null;
-	private HashMap<String, String> name;
-	private HashMap<String, String> address;
+	private String firstName = null;
+	private String lastName = null;
+	private Address address;
 	private List<String> emailAddresses;
 
-	public Person(String personCode, Character personType, HashMap<String, String> name,
-			HashMap<String, String> address, List<String> emailAddresses) {
+	public Person(String personCode, Character personType, String  firstName, String lastName,Address address, List<String> emailAddresses) {
 		super();
 		this.personCode = personCode;
 		this.personType = personType;
-		this.name = name;
+		this.firstName = firstName;
+		this.lastName = lastName;
 		this.address = address;
 		this.emailAddresses = emailAddresses;
+	}
+	
+	
+
+	public Person(String personCode, Character personType, String firstName, String lastName, Address address) {
+		super();
+		this.personCode = personCode;
+		this.personType = personType;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.address = address;
+	}
+
+
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 
 	public String getPersonCode() {
@@ -36,21 +67,7 @@ public class Person {
 		this.personType = personType;
 	}
 
-	public HashMap<String, String> getName() {
-		return name;
-	}
 
-	public void setName(HashMap<String, String> name) {
-		this.name = name;
-	}
-
-	public HashMap<String, String> getAddress() {
-		return address;
-	}
-
-	public void setAddress(HashMap<String, String> address) {
-		this.address = address;
-	}
 
 	public List<String> getEmailAddresses() {
 		return emailAddresses;
@@ -60,10 +77,40 @@ public class Person {
 		this.emailAddresses = emailAddresses;
 	}
 
+
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+
+
+	public String getLastName() {
+		return lastName;
+	}
+
+
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getFullName() {
+		return this.getLastName() + "" + this.getFirstName();
+	}
+
+
+
 	@Override
 	public String toString() {
-		return "Person [personCode=" + personCode + ", personType=" + personType + ", name=" + name + ", address="
-				+ address + ", emailAddresses=" + emailAddresses + "]";
+		return "Person [personCode=" + personCode + ", personType=" + personType + ", firstName=" + firstName
+				+ ", lastName=" + lastName + ", address=" + address + ", emailAddresses=" + emailAddresses + "]";
 	}
 	
 	

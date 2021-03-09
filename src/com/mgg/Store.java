@@ -3,18 +3,36 @@ package com.mgg;
 import java.util.HashMap;
 import java.util.List;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamImplicit;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
+
+/**
+ * The Store class models the data for a store in mgg's data files. 
+ * @author bryanmcgahan
+ *
+ */
+@XStreamAlias("Store")
 public class Store {
 
+	@XStreamAlias("Code")
 	private String storeCode = null;
-	private String managerCode = null;
+	@XStreamAlias("Manager")
 	private Person manager;
-	private HashMap<String, String> storeAddress;
+	@XStreamAlias("Address")
+	private Address storeAddress;
 
-	public Store(String storeCode, String managerCode, HashMap<String, String> storeAddress) {
+	public Store(String storeCode,Address storeAddress) {
 		super();
 		this.storeCode = storeCode;
-		this.managerCode = managerCode;
 		this.storeAddress = storeAddress;
+	}
+	
+	public Store(String storeCode,Address storeAddress, Person manager) {
+		super();
+		this.storeCode = storeCode;
+		this.storeAddress = storeAddress;
+		this.manager = manager;
 	}
 
 	public String getStoreCode() {
@@ -25,19 +43,12 @@ public class Store {
 		this.storeCode = storeCode;
 	}
 
-	public String getManagerCode() {
-		return managerCode;
-	}
 
-	public void setManagerCode(String managerCode) {
-		this.managerCode = managerCode;
-	}
-
-	public HashMap<String, String> getStoreAddress() {
+	public Address getStoreAddress() {
 		return storeAddress;
 	}
 
-	public void setStoreAddress(HashMap<String, String> storeAddress) {
+	public void setStoreAddress(Address storeAddress) {
 		this.storeAddress = storeAddress;
 	}
 
@@ -51,7 +62,7 @@ public class Store {
 
 	@Override
 	public String toString() {
-		return "Store [storeCode=" + storeCode + ", managerCode=" + managerCode + ", manager=" + manager
+		return "Store [storeCode=" + storeCode  + ", manager=" + manager
 				+ ", storeAddress=" + storeAddress + "]";
 	}
 

@@ -1,133 +1,137 @@
-<?xml version="1.0"?>
-<stores>
-<Store>
-  <storeCode>96f2cf</storeCode>
-  <manager>
-    <personCode>fdc267</personCode>
-    <lastName>Quarry</lastName>
-    <firstName>Staci</firstName>
-    <address>
-      <street>601 Lotheville Road</street>
-      <city>Savannah</city>
-      <state>GA</state>
+<Stores>
+  <Store>
+    <Code>3c0234</Code>
+    <Manager>
+      <personCode>fdc267</personCode>
+      <personType>E</personType>
+      <firstName>Staci</firstName>
+      <lastName>Quarry</lastName>
+      <address>
+        <street>601 Lotheville Road</street>
+        <city>Savannah</city>
+        <state>GA</state>
+        <zipCode>31405</zipCode>
+        <country>US</country>
+      </address>
+      <emailAddresses>
+        <string>squarry0@reverbnation.com</string>
+        <string>squarry0@salon.com</string>
+      </emailAddresses>
+    </Manager>
+    <Address>
+      <street>2 Crest Line Way</street>
+      <city>New York City</city>
+      <state>NY</state>
+      <zipCode>10184</zipCode>
       <country>US</country>
-      <zipCode>31405</zipCode>
-    </address>
-    <emails>
-      <email>squarry0@reverbnation.com</email>
-      <email>squarry0@salon.com</email>
-    </emails>
-  </manager>
-  <address>
-    <street>1145 Transport Drive</street>
-    <city>Gainesville</city>
-    <state>FL</state>
-    <country>US</country>
-    <zipCode>32605</zipCode>
-  </address>
-</Store>
-<Store>
-  <storeCode>25d901</storeCode>
-  <manager>
-    <personCode>aa887a</personCode>
-    <lastName>Leavold</lastName>
-    <firstName>Wit</firstName>
-    <address>
-      <street>65337 Straubel Place</street>
-      <city>Muncie</city>
-      <state>IN</state>
+    </Address>
+  </Store>
+  <Store>
+    <Code>9f352c</Code>
+    <Manager>
+      <personCode>aa887a</personCode>
+      <personType>E</personType>
+      <firstName>Wit</firstName>
+      <lastName>Leavold</lastName>
+      <address>
+        <street>65337 Straubel Place</street>
+        <city>Muncie</city>
+        <state>IN</state>
+        <zipCode>47306</zipCode>
+        <country>US</country>
+      </address>
+      <emailAddresses>
+        <string>wleavold2@npr.org</string>
+        <string>wleavold2@craigslist.org</string>
+      </emailAddresses>
+    </Manager>
+    <Address>
+      <street>438 Jenna Road</street>
+      <city>Huntsville</city>
+      <state>AL</state>
+      <zipCode>35815</zipCode>
       <country>US</country>
-      <zipCode>47306</zipCode>
-    </address>
-    <emails>
-      <email>wleavold2@npr.org</email>
-      <email>wleavold2@craigslist.org</email>
-    </emails>
-  </manager>
-  <address>
-    <street>180 Magdeline Plaza</street>
-    <city>Wichita</city>
-    <state>KS</state>
-    <country>US</country>
-    <zipCode>67230</zipCode>
-  </address>
-</Store>
-<Store>
-  <storeCode>3c0234</storeCode>
-  <manager>
-    <personCode>fdc267</personCode>
-    <lastName>Quarry</lastName>
-    <firstName>Staci</firstName>
-    <address>
-      <street>601 Lotheville Road</street>
-      <city>Savannah</city>
-      <state>GA</state>
+    </Address>
+  </Store>
+  <Store>
+    <Code>73668b</Code>
+    <Manager>
+      <personCode>fdc267</personCode>
+      <personType>E</personType>
+      <firstName>Staci</firstName>
+      <lastName>Quarry</lastName>
+      <address>
+        <street>601 Lotheville Road</street>
+        <city>Savannah</city>
+        <state>GA</state>
+        <zipCode>31405</zipCode>
+        <country>US</country>
+      </address>
+      <emailAddresses>
+        <string>squarry0@reverbnation.com</string>
+        <string>squarry0@salon.com</string>
+      </emailAddresses>
+    </Manager>
+    <Address>
+      <street>9257 Maywood Junction</street>
+      <city>Phoenix</city>
+      <state>AZ</state>
+      <zipCode>85099</zipCode>
       <country>US</country>
-      <zipCode>31405</zipCode>
-    </address>
-    <emails>
-      <email>squarry0@reverbnation.com</email>
-      <email>squarry0@salon.com</email>
-    </emails>
-  </manager>
-  <address>
-    <street>2 Crest Line Way</street>
-    <city>New York City</city>
-    <state>NY</state>
-    <country>US</country>
-    <zipCode>10184</zipCode>
-  </address>
-</Store>
-<Store>
-  <storeCode>73668b</storeCode>
-  <manager>
-    <personCode>fdc267</personCode>
-    <lastName>Quarry</lastName>
-    <firstName>Staci</firstName>
-    <address>
-      <street>601 Lotheville Road</street>
-      <city>Savannah</city>
-      <state>GA</state>
+    </Address>
+  </Store>
+  <Store>
+    <Code>96f2cf</Code>
+    <Manager>
+      <personCode>fdc267</personCode>
+      <personType>E</personType>
+      <firstName>Staci</firstName>
+      <lastName>Quarry</lastName>
+      <address>
+        <street>601 Lotheville Road</street>
+        <city>Savannah</city>
+        <state>GA</state>
+        <zipCode>31405</zipCode>
+        <country>US</country>
+      </address>
+      <emailAddresses>
+        <string>squarry0@reverbnation.com</string>
+        <string>squarry0@salon.com</string>
+      </emailAddresses>
+    </Manager>
+    <Address>
+      <street>1145 Transport Drive</street>
+      <city>Gainesville</city>
+      <state>FL</state>
+      <zipCode>32605</zipCode>
       <country>US</country>
-      <zipCode>31405</zipCode>
-    </address>
-    <emails>
-      <email>squarry0@reverbnation.com</email>
-      <email>squarry0@salon.com</email>
-    </emails>
-  </manager>
-  <address>
-    <street>9257 Maywood Junction</street>
-    <city>Phoenix</city>
-    <state>AZ</state>
-    <country>US</country>
-    <zipCode>85099</zipCode>
-  </address>
-</Store>
-<Store>
-  <storeCode>9f352c</storeCode>
-  <manager>
-    <personCode>aa887a</personCode>
-    <lastName>Leavold</lastName>
-    <firstName>Wit</firstName>
-    <address>
-      <street>65337 Straubel Place</street>
-      <city>Muncie</city>
-      <state>IN</state>
+    </Address>
+  </Store>
+  <Store>
+    <Code>25d901</Code>
+    <Manager>
+      <personCode>aa887a</personCode>
+      <personType>E</personType>
+      <firstName>Wit</firstName>
+      <lastName>Leavold</lastName>
+      <address>
+        <street>65337 Straubel Place</street>
+        <city>Muncie</city>
+        <state>IN</state>
+        <zipCode>47306</zipCode>
+        <country>US</country>
+      </address>
+      <emailAddresses>
+        <string>wleavold2@npr.org</string>
+        <string>wleavold2@craigslist.org</string>
+      </emailAddresses>
+    </Manager>
+    <Address>
+      <street>180 Magdeline Plaza</street>
+      <city>Wichita</city>
+      <state>KS</state>
+      <zipCode>67230</zipCode>
       <country>US</country>
-      <zipCode>47306</zipCode>
-    </address>
-    <emails>
-      <email>wleavold2@npr.org</email>
-      <email>wleavold2@craigslist.org</email>
-    </emails>
-  </manager>
-  <address>
-    <street>438 Jenna Road</street>
-    <city>Huntsville</city>
-    <state>AL</state>
-    <country>US</country>
-    <zipCode>35815</zipCode>
-  </address>
-</Store>
-</stores>
+    </Address>
+  </Store>
+</Stores>
